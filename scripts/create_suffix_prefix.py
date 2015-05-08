@@ -29,6 +29,6 @@ def suffix_prefix_index(i_path):
                     hash_p += 1
         ip.close()
 if __name__=="__main__":
-    suffix_prefix_index('../training-hindi-raw')
+    suffix_prefix_index('../data/training-hindi-raw')
     pickle.dump(suffix_dict, open( "../pickled/suffix_full_training.p", "wb" ))
     pickle.dump(prefix_dict, open( "../pickled/prefix_full_training.p", "wb" ))

@@ -18,5 +18,5 @@ def word_index(i_path):
                     hash += 1
         ip.close()
 if __name__=="__main__":
-    word_index('../training-hindi-raw')
+    word_index('../data/training-hindi-raw')
     pickle.dump(word_freq_dict, open( "../pickled/word_index_full_training.p", "wb" ))

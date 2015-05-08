@@ -11,5 +11,5 @@ def index_wiki_vocab(w_file):
                 wiki_vocab.add(word)
     w.close()
 if __name__=="__main__":
-    index_wiki_vocab('../wiki-titles.hi-en')
+    index_wiki_vocab('../data/wiki-titles.hi-en')
     pickle.dump(wiki_vocab, open( "../pickled/wiki_vocab.p", "wb" ))

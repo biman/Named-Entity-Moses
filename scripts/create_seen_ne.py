@@ -41,5 +41,5 @@ def get_seen_ne(r_path):
             print "50 files done"
             files=0
 if __name__=="__main__":
-    get_seen_ne('../training-hindi')
+    get_seen_ne('../data/training-hindi')
     pickle.dump(seen_ne, open( "../pickled/seen_ne.p", "wb" ))

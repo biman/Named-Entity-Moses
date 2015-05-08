@@ -12,5 +12,5 @@ def index_wiki_freq(w_file):
                 wiki_freq[word] +=1
     w.close()
 if __name__=="__main__":
-    index_wiki_freq('../wiki-titles.hi-en')
+    index_wiki_freq('../data/wiki-titles.hi-en')
     pickle.dump(wiki_freq, open( "../pickled/wiki_freq.p", "wb" ))
