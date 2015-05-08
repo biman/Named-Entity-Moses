@@ -20,7 +20,7 @@ if __name__ == '__main__':
     #print "Compute Metrics..."
     #compute_metrics(predict_test, labels_test)
     '''Write NEs to file for Moses'''
-    with codecs.open('transliterate_words.hi',encoding="utf8",mode="w") as o_file:
+    with codecs.open('../data/ne_words.hi',encoding="utf8",mode="w") as o_file:
         for ind in range(len(predict_test[0])):
             if predict_test[0][ind]==1:
                 o_file.write(test_words[ind])
