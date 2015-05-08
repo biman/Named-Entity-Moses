@@ -6,8 +6,8 @@ from util import build_features, test_svm, compute_metrics, test_words
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train NER on SVM')
-    parser.add_argument('-t', '--test', default='../test-raw/', help='test file')
-    parser.add_argument('-r', '--test_ref', default='../test/', help='reference labels test file')
+    parser.add_argument('-t', '--test', default='../data/test-raw/', help='test file')
+    parser.add_argument('-r', '--test_ref', default='../data/test/', help='reference labels test file')
     parser.add_argument('-m', '--model', default='../models/trained_full_sfx_pfx_0506_2040.pkl', help='Model Trained with SVM')
     opts = parser.parse_args()
     labels_test = []

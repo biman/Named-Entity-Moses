@@ -8,8 +8,8 @@ from util import build_features, train_svm
 clf = svm.SVC()
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train NER on SVM')
-    parser.add_argument('-i', '--input', default='../training-hindi-raw/', help='input file')
-    parser.add_argument('-r', '--reference', default='../training-hindi/', help='reference labels train file')
+    parser.add_argument('-i', '--input', default='../data/training-hindi-raw/', help='input file')
+    parser.add_argument('-r', '--reference', default='../data/training-hindi/', help='reference labels train file')
     opts = parser.parse_args()
     features_train = []
     labels_train = []

@@ -6,7 +6,7 @@ from util import build_test_features, test_svm, test_arch_words_in_train, test_w
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train NER on SVM')
-    parser.add_argument('-t', '--test', default='../test_no_label/', help='test file')
+    parser.add_argument('-t', '--test', default='../data/test_no_label/', help='test file')
     parser.add_argument('-m', '--model', default='../models/trained_full_sfx_pfx_0506_2040.pkl', help='Model Trained with SVM')
     opts = parser.parse_args()
     predict_test = []
